@@ -1,0 +1,82 @@
+<%- include('../includes/navigation.ejs') %>
+<link rel="stylesheet" type="text/css" media="screen" href="assets/apply1.css" />
+<br>
+<div class="first">
+
+    <!-- Forum filling -->
+    <form method="POST" action="/apply1">
+        
+        <label class="label"><h1>Name of Apartment</h1></label>
+        <input type="text" name='nameofapartment' autocomplete="text" placeholder="Name of your Apartment">
+
+        <h1>Tell Us About Yourself</h1>
+        <p>I Am - </p>
+
+    <ul>
+            <li>
+                    <input type="radio" id="f-option" name="selector">
+                    <label for="f-option">Pizza</label>
+                    
+                    <div class="check"></div>
+            </li>
+        <input name='ob' type="radio" value="owner">Owner
+        <input name='ob' type="radio" value="broker">Broker
+    
+        <h1>Tell Us About Property Location</h1>
+        <p>Property For - </p><br><br>
+        <input name='rs' type="radio" value="rent">Rent<br>
+        <input name='rs' type="radio" value="sell">Sell<br>
+        <br><br>
+        <input type="text" name='StreetAreaLandmark' autocomplete="text" placeholder="Enter Street/Area/Landmark">
+        <label class="label">Enter Street/Area/Landmark</label><br><br>
+        <input type="text" name='city' autocomplete="text" placeholder="City">
+        <label class="label">City</label><br><br>
+        <input type="text" name='locality' autocomplete="text" placeholder="Locality">
+        <label class="label">Locality</label><br><br>
+        <input type="text" name='BuildingProjectSociety' autocomplete="text" placeholder="Building/Project/Society (Optional)">
+        <label class="label">Building/Project/Society (Optional)</label><br><br>
+        <p style="opacity:0.4">_______________________________________________________________________
+            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp_______________________________________</p>
+        
+        <div class="butn">    <button type="submit">Next</button>   </div>
+    </ul>
+    </form>
+    
+
+</div>
+
+
+<!-- asda -->
+
+
+
+
+<div class="container">
+	
+  <ul>
+  <li>
+    <input type="radio" id="f-option" name="selector">
+    <label for="f-option">Pizza</label>
+    
+    <div class="check"></div>
+  </li>
+  
+  <li>
+    <input type="radio" id="s-option" name="selector">
+    <label for="s-option">Bacon</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  
+  <li>
+    <input type="radio" id="t-option" name="selector">
+    <label for="t-option">Cats</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+</ul>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+.navbar{
+  position: relative;
+}
+
+body{
+    z-index: 0;
+    background: url(../public/images/road.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 1600px 785px;  */
+    background-attachment: fixed;
+    background-position: center; 
+    
+  }
+
+  .rightbox{
+    position: absolute;
+    top: 70px;
+    border-radius: 15px;
+  border: 2px solid rgb(0, 0, 0); 
+  margin-top: 0px;
+  margin-left: 340px; 
+  font-size: 28px; 
+  background-color: white;
+  padding: 0px 20px;
+ 
+  }
+
+  .leftbox{
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+  margin-left: 20px;
+  height: 97%;
+  width: 300px;
+  position: fixed;
+  top: 10px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 10px;
+
+  }
+
+  .inner1{
+    position: relative;
+    left: 10px;
+    top: 24px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+ 
+  h1{
+    margin-top: 20px;
+    color:Green;
+     font-size:35px;
+     font-family: Arial, Helvetica, sans-serif;
+  }
+
+h4{
+  
+}
+
+.space1{
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  line-height: 50px;
+}
+
+.space1left{
+  margin-left: 50px;
+}
+
+.space1right{
+  margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

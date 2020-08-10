@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    }
+      
+
+.navbar {
+        display: flex;
+        justify-content: space-between;
+          margin-right: 25px;
+          position: fixed;
+          z-index: 5;
+          width: 99%;
+          height: 43px;
+          background-color: rgb(46, 172, 211);
+          box-sizing: border-box;
+          box-shadow: 0px 5px 8px #5393b8;
+          border-radius: 12px;
+           
+        }
+
+
+
+.navbar a, .navbar form {
+   
+          float: left;
+          padding: 12px;
+          color: rgb(0, 0, 0);
+          text-decoration: none;
+          font-size: 17px;
+          transition: 0.5s;
+        }
+        
+.navbar a:hover, .navbar form:hover {
+        cursor: pointer;
+        border-radius: 12px;
+          background-color: rgb(1, 88, 114);
+          color: white;
+        }
+        
+
+.row{
+   
+    display: flex;
+}
+.column{
+    position: relative;
+    flex: 25%;
+}
+
+.first{
+    width: 100%;
+    height: 100%;
+}
+
+
+#housetype{
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    width: 100px;
+    height: 22px;
+    color: white;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+  left: 0px;
+  top: -16px;
+}
+
+  
+#head{
+    font-size: 35px;
+}
+
+
+#about{
+    margin: 5px 35px 5px 35px;
+}
+
+
+.container{
+    margin: 5px 55px 5px 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.container > div {
+    padding: 10px 10px 10px 10px;
+    background-color: #e7e3e3af;
+  
+}
+
+.container > div > div {
+   padding: 5px 5px 5px 5px;
+}
+
+.button{
+    animation-duration: 2s;
+    width:96.5%;
+    text-align: center ;
+    background-color:rgb(155, 155, 155);
+    animation-duration: 2s;
+}
+
+.button:hover{
+    background-color: rgb(87, 87, 87);
+    color: white;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    
+}
+
+.contact{
+    margin: 30px 50px 0px 30px;
+}
+
+.last{
+    position: relative;
+    margin-bottom: 0px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 90px;;
+    background-color: black;
+}
+
+.building{
+    position: relative;
+    border: 2px solid black;
+}
+
+
+
+
+

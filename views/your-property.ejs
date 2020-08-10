@@ -1,0 +1,57 @@
+<%- include('../includes/navigation.ejs') %>
+<link rel="stylesheet" type="text/css" media="screen" href="../assets/your-property.css" />
+
+<!-- Total New  -->
+<% if (prods.length > 0) { %>
+<div class="prodcontainer">
+    <% for (let product of prods)  { %>
+            <div class="inside">
+                <h1><%= product.nameofapartment %></h1>
+               <!-- Images Section -->
+                <img style="cursor: pointer;"  src="<%= product.image %>" width="420px" height="250px">
+                <div class="imagesbox"></div>
+                    
+                <!-- All information -->
+                <div class="reinside">
+                    <p>Price = <%= product.price %><br></p>
+                    <p>Owner/Buyer = <%= product.ob %><br></p>
+                    <p>Renting/Selling = <%= product.rs %><br></p>
+                    <p>Street/Landmark/Area = <%= product.StreetAreaLandmark %><br></p>
+                    <p>City = <%= product.city %><br></p>
+                    <p>Locality = <%= product.locality %><br></p>
+                    <p>Building/Project/Society = <%= product.BuildingProjectSociety %><br></p>
+                    <p>Property Type = <%= product.proptype %><br></p>
+                    <p>Bedrooms = <%= product.bedrooms %><br></p>
+                    <p>Bathrooms = <%= product.bathrooms %><br></p>
+                    <p>Furnish Type = <%= product.furnishtype %><br></p>
+                    <p>Tenant Type = <%= product.tenanttype %><br></p>
+                    <p>Build Up Area = <%= product.builduparea %><br></p>
+                    <p>Floor Number = <%= product.floornumber %><br></p>
+                    <p>Total Floors = <%= product.totalfloors %><br></p>
+                    <p>Available From = <%= product.availablefrom %><br></p>
+                    <p>Carpet Area = <%= product.carpetarea %><br></p>
+                    <p>How Old Is Your Property = <%= product.ageofproperty %><br></p>
+                    <p>Monthly Rent = <%= product.monthlyrent %><br></p>
+                    <p>Maintanance Charges = <%= product.maintanancecharges %><br></p>
+                    <p>Security Charges = <%= product.securitydeposit %><br></p>
+                    <p>Description = <%= product.description %><br></p>
+                     
+                    <p>Special Offers = <%= product.special %><br></p>
+                </div>
+                
+
+                 <!-- //Delete Property -->
+                <form method="POST" action="/delete-product/<%= product._id%>"><br><button type="submit">Delete</button><br><br></form>
+                
+            </div>
+    <% } %>
+</div>
+
+<!-- Else condition -->
+<% } else { %>
+    <h1>No Products Found!</h1>
+    <% } %>
+
+
+</body>
+</html>

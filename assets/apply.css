@@ -1,0 +1,75 @@
+body{
+    background: url(../public/images/yellow1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px 785px; 
+    background-attachment: fixed;
+    background-position: center; 
+    
+}
+h1{
+    font-weight: 1000;	
+    font-size: 35px; 
+    width: 700px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2px;
+    border-bottom: 1px solid black;
+    text-shadow: 0px 2px 3px #666;
+}
+h2{
+    font-size: 25px;
+    color: rgb(52, 162, 226);
+}
+
+
+.first{
+    height: 100%;
+    border:2px solid rgba(0, 0, 0, 0);
+}
+
+input[type=number], input[type=text]{
+        
+        border: 2px solid rgb(15, 85, 8) ;
+        border-radius: 5px;
+        padding: 3px 3px 3px 3px;
+        color: rgb(1, 230, 39);
+        transition: 0.5s;
+        width: 230px;
+}
+
+input[type=number]:hover , input[type=text]:hover{
+    
+    box-shadow:3px 3px 5px hsla(214, 91%, 44%, 0.925);
+    border: 2px solid rgb(0, 0, 0);
+    
+}
+
+#second{
+    display: none;
+}
+
+h3{
+    width: 200px;
+    padding: 5px 3px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius:30px;
+}
+
+button{
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.last > a {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(89, 140, 153);
+    text-decoration: none;
+    padding: 2px 6px;
+}

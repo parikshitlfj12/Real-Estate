@@ -1,0 +1,79 @@
+.right{
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  border-left: 1px solid rgb(197, 197, 197);
+  z-index: 1;
+  top: 0;
+  left: 269px;
+  background-color: rgb(235, 235, 235);
+  overflow: scroll;
+  padding-top: 20px
+}
+
+.rental{
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+  font-size: 35px;
+}
+
+
+.searchaval{
+  background-color:green;
+  border:2px solid green;
+  width: 200px;
+  height:25px;
+}
+
+.searchaval:hover{
+  
+  background-color:green;
+  border:0.5px solid rgb(0, 0, 0);
+  width: 200px;
+  height:25px;
+  box-shadow: 5px 5px 5px 3px black;
+}
+
+
+.anchor a{
+  
+  color: rgb(54, 58, 54);  
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.anchor a:hover{
+  color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+ .row, .column {
+    box-sizing: border-box;
+  }

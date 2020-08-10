@@ -1,0 +1,159 @@
+<%- include('../includes/navigation.ejs') %>
+<link rel="stylesheet" type="text/css" media="screen" href="assets/apply.css" />
+
+<div class="first">
+
+    <!-- Forum filling -->
+    <form method="POST" action="/apply1" enctype="multipart/form-data">
+        
+        <label class="label"><h1>Name of Apartment</h1></label>
+        <input type="text" name='nameofapartment' autocomplete="text" placeholder="Name of your Apartment">
+
+        <h1>Tell Us About Yourself</h1>
+        <h2>I Am - </h2></p>
+        <input name='ob' type="radio" value="owner">Owner<br>
+        <input name='ob' type="radio" value="broker">Broker<br>
+    
+        <h1>Tell Us About Property Location</h1>
+        <h2>Property For - </h2></p><br><br>
+        <input name='rs' type="radio" value="rent">Rent<br>
+        <input name='rs' type="radio" value="sell">Sell<br>
+        <br><br>
+        <input type="text" name='price' autocomplete="text" placeholder="Enter Price">
+        <label class="label">Price</label><br><br>
+        <input type="text" name='StreetAreaLandmark' autocomplete="text" placeholder="Enter Street/Area/Landmark">
+        <label class="label">Enter Street/Area/Landmark</label><br><br>
+        <input type="text" name='city' autocomplete="text" placeholder="City">
+        <label class="label">City</label><br><br>
+        <input type="text" name='locality' autocomplete="text" placeholder="Locality">
+        <label class="label">Locality</label><br><br>
+        <input type="text" name='BuildingProjectSociety' autocomplete="text" placeholder="Building/Project/Society (Optional)">
+        <label class="label">Building/Project/Society (Optional)</label><br><br>
+        
+        <h2>Any Special offer ?</h2>
+        <input type="text" name='special' autocomplete="text" placeholder="Special Offer">
+        <br><br><br>
+        <h3 onclick="myFunction()">Confirm And Next</h3>   
+    </div>
+
+<div id="second">
+    <!-- Second -->
+    <div class="second1">
+            <!-- Share Your Property Details -->
+            
+                <h1>Share Your Property Details</h1><br>
+            <div class="share">
+                <div>
+                    <h2>Property Type </h2><br><br>
+                    <input type="radio" name="proptype" value="Hotel Rooms">Hotel Rooms
+                    <input type="radio" name="proptype" value="House">House
+                    <input type="radio" name="proptype" value="P.G.">P.G.
+                    <input type="radio" name="proptype" value="Apartment">Apartment
+                    <input type="radio" name="proptype" value="Independent Floor"> Independent Floor
+                    <input type="radio" name="proptype" value="Independent House"> Independent House
+                    <input type="radio" name="proptype" value="Villa">Villa<br>
+                    
+                </div>
+                <br><br>
+                <div>
+                    <label for="bedrooms">Bedrooms</label><br>
+                    <input name="bedrooms" type="number" placeholder="0"><br><br>
+                    <label for="bathrooms">Bathrooms</label><br>
+                    <input name="bathrooms" type="number" placeholder="0">
+                </div>
+                <br>
+                <div>
+                        <h2>Furnish Type </h2><br><br>
+                        <input type="radio" name="furnishtype" value="fullyfurnish">Fully Furnish
+                        <input type="radio" name="furnishtype" value="semifurnish">Semi Furnish
+                        <input type="radio" name="furnishtype" value="unfurnished">Unfurnished
+                                                        <br><br>
+                        <h2>Preferred Tenant Type </h2><br><br>
+                        <input type="radio" name="tenanttype" value="family">Family
+                        <input type="radio" name="tenanttype" value="bachelors">Bachloers
+                        <input type="radio" name="tenanttype" value="company">Company       
+                </div>
+            </div>
+                <br><br>
+                <div class="input6">
+                    <h2>Extras</h2>
+                    <br>
+                        <div>
+                            <input name="builduparea" type="number" placeholder="Build Up Area">&nbsp;&nbsp;&nbsp;
+                            <input name="floornumber" type="number" placeholder="Floor Number">&nbsp;&nbsp;&nbsp;
+                            <input name="availablefrom" type="number" placeholder="Available From"><br><br>
+                        </div>
+                        <div> 
+                            <input name="carpetarea" type="number" placeholder="Carpet Area">&nbsp;&nbsp;&nbsp;
+                            <input name="totalfloors" type="number" placeholder="Total Floors">&nbsp;&nbsp;&nbsp;
+                            <input name="ageofproperty" type="number" placeholder="Age Of Property">
+                        </div>
+                </div>
+                <br>
+        </div>
+        <br><br><br>
+        <!-- Share Commercials For Your Company -->
+        
+        <div class="second2">
+                <h1>Share Commercials For Your Company</h1>
+                <div>
+                    <input name="monthlyrent" type="text" placeholder="Monthly Rent">&nbsp;&nbsp;&nbsp;
+                    <input name="maintanancecharges" type="text" placeholder="Maintanance Charges">&nbsp;&nbsp;&nbsp;
+                    <input name="securitydeposit" type="text" placeholder="Security Deposit">
+                </div>
+        </div>
+        <br><br>
+        <!-- Description -->
+        <div class="description">
+            <h2>Any Description-  </h2><br>
+            <input name="description" type="text" placeholder="Description">
+        </div>
+        
+        <br><br><br>
+        <div class="second3">
+            <h1>Share Your Property Photos</h1>
+        
+            <div class="imageupload">
+            
+                <input type="file" name="image">
+                <button> Add Image</button>
+        
+            Max limit 5 MB per image
+            <p class="i1"><b>Atleast 8 photos</b> will increase<br>property quality score by 15%</p>
+            <p class="i2"><b>Hall, Bedroom, Kitchen and Bathroom</b><br> photos will get more points in quality score</p>
+            </div>
+        
+    </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<br><br>
+
+
+
+
+<div class="last">
+        <p>Post property for free on our network. Know more</p>
+        <a href="/" >Back</a>
+</div>
+
+
+<!-- Script -->
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("second");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+  }
+
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<%- include('../includes/navigation.ejs') %>
+<link rel="stylesheet" type="text/css" media="screen" href="../assets/product-list.css" />
+
+
+
+<!-- Total New  -->
+<% if (prods.length > 0) { %>
+<div class="prodcontainer">
+    <% for (let product of prods)  { %>
+            <div class="inside">
+                <p onclick="location.href='/product/<%= product._id%>';" class="pclass"><%= product.nameofapartment %></p>
+                <!-- //Delete -->
+                <img onclick="location.href='/product/<%= product._id%>';" style="cursor: pointer;" alt="<%=product.image %>"  src="/<%=product.image %>" width="370px" height="220px">
+                <form method="POST" action="/delete-product/<%= product._id%>"><br><button type="submit">Delete</button><br><br></form>
+                <form method="POST" action="/addtocart/<%= product._id%>"><br><button type="submit">Add Property</button><br><br></form>
+                <div onclick="location.href='/product/<%= product._id%>';" class="reinside">
+                    <p>Price = <%= product.price %><br></p>
+                    <p class="special"><%= product.special%></p>
+                </div>
+            </div>
+    <% } %>
+</div>
+<section class="pagination">
+    <% if (currentPage !== 1) { %>
+        <a href="/product-list/?page=1">1</a>
+    <% }  %>
+    <a href="/product-list/?page=<%= currentPage %>" class="active"><%= currentPage %></a>
+    <% if (hasNextPage) { %>
+    <a href="/product-list/?page=<%= currentPage %>"><%= nextPage %></a>
+    <% } %>
+    <% if (lastPage !== currentPage && nextPage !== lastPage) { %>
+    <a href="/product-list/?page=<%= lastPage %>"><%= lastPage %></a>
+    <% } %>
+
+
+
+</section>
+
+<!-- Else condition -->
+<% } else { %>
+    <h1>No Products Found!</h1>
+    <% } %>
+
+
+</body>
+</html>

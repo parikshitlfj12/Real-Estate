@@ -1,0 +1,168 @@
+<%- include('../includes/navigation.ejs') %>
+
+<link rel="stylesheet" type="text/css" media="screen" href="../assets/product.css" />
+  
+<!-- Sidebar/menu -->
+<div class="leftbox"  >
+        <div class="inner1">
+            
+                <h1 class="rental">
+                    <% if (prods.rs == 'rent') { %>
+                    Rent
+                    
+                    <% } else { %>
+                    Sell
+                    <% } %>
+                
+                
+                </h1>
+                <p style="display:inline">Starting from <p style="display:inline">INR <%= prods.monthlyrent %>/-</p></p>
+                <p >per month</p>
+                <form method="POST" action="/availability">
+                    <label for="Checkin">Check In<br><br></label>
+                    <input type="date" name="Checkin" ><br><br>
+                    <label for="Checkout">Check Out<br><br></label>
+                    <input type="date" name="Checkout" ><br><br>
+                    <label for="Adults">Adults<br><br></label>
+                    <input type="number" name="Adults" value=0 ><br><br>
+                    <label for="Kids">Kids</label><br><br>
+                    <input type="number" name="Kids" value=0 ><br><br><br>
+                    <button type="submit" >Search Availability</button><br>
+                </form>
+                <p style="opacity:0.4">______________________________</p>
+                <br><br>
+            
+            
+                <a href="/"> Home Page</a><br><br>
+                <a href="/login" >Login</a><br><br>
+                <a href="/apply1"> Sign-Up</a><br>
+    
+            
+        </div>
+</div>
+    
+<div class="rightbox">
+    
+            <!--the Apartment-->
+    
+            <h1><%= prods.nameofapartment%></h1>
+            <!--Photos-->
+            <div id="photos" >
+                <div id="first">
+                    <img src="<%= prods.image%>" height="450px" width="720px">
+                </div>
+                <div id="otphoto">
+                    <img src="../images/second.jpg" style="height:100px; width:150px;opacity: 0.5" >&nbsp;&nbsp;
+                    <img src="../images/third.jpg" style="height:100px; width:150px;opacity: 0.5" >&nbsp;&nbsp;
+                    <img src="../images/fourth.jpg" style="height:100px; width:150px;opacity: 0.5" >&nbsp;&nbsp;
+                    <img src="../images/fifth.jpg" style="height:100px; width:150px;opacity: 0.5" >&nbsp;&nbsp;
+                </div>
+    
+            </div>
+    
+            <p style="opacity:0.2">___________________________________</p>
+            <br><br>
+            
+            <div class="space">
+                <!--The Space Totally covered-->
+
+
+                <h8 style="color:Green; font-size:35px">The Space</h8>
+                <br><br>
+                <div class="space1">
+                <div class="space1left">
+                    <div>
+                         BedRooms - <%= prods.bedrooms%> 
+                    </div>
+                    <div>
+                        Bathrooms - <%= prods.bathrooms%> 
+                    </div>
+                    <div>
+                        Furniture Type - <%= prods.furnishtype%> 
+                    </div>
+                    <div>
+                            Age of Property in Years - <%= prods.ageofproperty%> 
+                    </div> 
+                </div>
+                <div class="space1right">
+                    <div>
+                        Build-Up Area - <%= prods.builduparea%> 
+                    </div>
+                    <div>
+                        Floor Number - <%= prods.floornumber%> 
+                    </div>
+                    <div>
+                        Carpet Area - <%= prods.carpetarea%> 
+                    </div>
+                </div>
+                </div>
+                 
+                
+
+                <br><br>
+
+
+                <!--Amenities-->
+                <div id='Amenities'>
+                    <h8 style="color:Green; font-size:35px">Amenities</h8>
+                    
+
+
+                    <br><br><br><br><br><br><br><br><br>
+                </div>
+    
+                <!--Extras-->
+                <div id="extras" style="width: 700px">
+                    <h8 style="color:Green; font-size:35px">Extra Info</h8>
+    
+                </div>
+                
+                <br><br><br><br><br><br><br><br><br>
+                <!--Rules-->
+    
+                <div id="rules" style="width: 700px">
+                    <h8 style="color:Green; font-size:35px">Rules</h8>
+                    
+                </div>
+                
+                <br><br><br><br><br><br><br><br><br>
+                
+    
+                <!--Contact-->
+                <div>
+                    <h8 style="color:Green; font-size:35px">Contact</h8>
+                    <div>
+                        <br>Chicago, US  <!--Add js dynamic property and store data from DB--> <br>
+                        Phone: +00 151515<br>
+                        Email: mail@mail.com<br><br>
+                    </div>
+    
+                    Questions? Go ahead, ask them.
+    
+                    <div id="form">
+                        <form method="POST">
+                            <label for="name"></label><br><br>
+                            <input type="text" name="name" placeholder="Name" style="width: 90%; height: 35px">
+                            <label for="email"></label><br><br>
+                            <input type="text" name="email" placeholder="Email" style="width: 90%; height: 35px">
+                            <label for="message"></label><br><br>
+                            <input type="text" name="message" placeholder="Message" style="width: 90%; height: 35px"><br><br>
+                            <button type="submit" style="width: 25%; height: 35px; background-color: green">Send Message</button>
+                        </form>
+                    </div>
+                    <br>
+    
+    
+                </div>
+    
+                <!--whole box -->
+            </div>
+</div>
+   
+
+    
+</body>
+</html>
+
+
+                

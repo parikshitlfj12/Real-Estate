@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css.css" rel="stylesheet" type="text/css">
+</head>
+<body style="margin-top: 0px">
+
+            <!-- Sidebar/menu -->
+<nav class="right"  >
+    <div style="position: relative;left: 10px">
+    <div class="b" style="margin-bottom: 50px">
+                    <h3 class="rental">Rental</h3>
+                    <h3 style="font-size: 20px;font-family:Arial, Helvetica, sans-serif">from $99</h3>
+                    <h6 style="font-size: 13px;font-family:Arial, Helvetica, sans-serif">per night</h6>
+        <form id='form' method="POST" action="/Search" style = "">
+            <label for="Checkin">Check In<br><br></label>
+            <input type="date" name="Checkin" style="width:170px; height: 25px; border: 1px solid green"><br><br>
+            <label for="Checkout">Check Out<br><br></label>
+            <input type="date" name="Checkout" style="width:170px; height: 25px; border: 1px solid green"><br><br>
+            <label for="Adults">Adults<br><br></label>
+            <input type="number" name="Adults" value=0 style="width:170px; height: 25px; border: 1px solid green"><br><br>
+            <label for="Kids">Kids</label><br><br>
+            <input type="number" name="Kids" value=0 style="width:170px; height: 25px; border: 1px solid green"><br><br><br>
+            <button type="submit" class="searchaval" formmethod="POST" formaction="/connection.js" >Search Availability</button><br><br><br><br>
+        </form>
+    </div>
+    <div class="anchor">
+            
+            
+            
+        <a href="https://www.google.com"> Apartment</a><br><br>
+        <a href="https://www.facebook.com" >Subscribe</a><br><br>
+        <a href="https://www.Youtube.com"> Contact</a><br>
+
+    </div>
+</div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+<div id="right" style="margin-left: 530px ; height: 100%; width: 750px; border-right: 1px solid rgb(82, 82, 82); ">
+
+    <div style="position: relative ;top: 5px;left: 15px">
+
+    <!--the Apartment-->
+    
+    <h8 style="color:Green; font-size:35px;font-family: Arial, Helvetica, sans-serif">The Apartment</h8>
+    <!--Photos-->
+    <div id="photos" style="margin-top:7px">
+        <div id="first" style="margin-bottom:7px">
+                <img src="../images/first.jpg" height="450px" width="720px">
+        </div>
+        <div id="otphoto">
+                <img src="../images/second.jpg" style="height:100px; width:150px;opacity: 0.5" >&nbsp;&nbsp;
+                <img src="../images/third.jpg" style="height:100px; width:150px;opacity: 0.5" >&nbsp;&nbsp;
+                <img src="../images/fourth.jpg" style="height:100px; width:150px;opacity: 0.5" >&nbsp;&nbsp;
+                <img src="../images/fifth.jpg" style="height:100px; width:150px;opacity: 0.5" >&nbsp;&nbsp;
+        </div>
+
+    </div>
+
+    <p style="opacity:0.2">_______________________________________________________________________________________</p>
+    <br><br>
+    <!--The Space-->
+    <div id="space">
+        <h8 style="color:Green; font-size:35px">The Space</h8>
+                  <div class="row">
+                    <div class="column" style="">
+                      <h2>Max people</h2>
+                      
+                    </div>
+                    <div class="column" style="">
+                      <h2>Check In</h2>
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="column" style="">
+                      <h2>Bathrooms</h2>
+                      
+                    </div>
+                    <div class="column" style="">
+                      <h2>Check Out</h2>
+                      
+                    </div>
+                  <div class="row">
+                            <div class="column" style="">
+                              <h2>Bedrooms</h2>
+                              
+                            </div>
+                  </div>
+            <p style="opacity:0.2">_______________________________________________________________________________________</p>
+    </div>
+    <br>
+    <!--Amenities-->
+    <div id='Amenities'>
+            <h8 style="color:Green; font-size:35px">Amenities</h8>
+                  <div class="row">
+                    <div class="column" style="">
+                      <h2>Shower</h2>
+                      
+                    </div>
+                    <div class="column" style="">
+                      <h2>Kitchen</h2>
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="column" style="">
+                      <h2>Wifi</h2>
+                      
+                    </div>
+                    <div class="column" style="">
+                      <h2>Heating</h2>
+                      
+                    </div>
+                  </div>
+
+                  <div class="row">
+                        <div class="column" style="">
+                          <h2>TV</h2>
+                          
+                        </div>
+                        <div class="column" style="">
+                          <h2>Accessible</h2>
+                          
+                        </div>
+                   </div>
+
+
+                   <p style="opacity:0.2">_______________________________________________________________________________________</p>
+        </div>
+
+        <!--Extras-->
+        <div id="extras" style="width: 700px">
+                <h8 style="color:Green; font-size:35px">Extra Info</h8>
+                <p>
+                    Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.<br><br>
+
+                </p>
+                <p>We accept : </p>
+
+                
+
+        </div>
+        <p style="opacity:0.2">_______________________________________________________________________________________</p>
+
+        <!--Rules-->
+
+        <div id="rules" style="width: 700px">
+                <h8 style="color:Green; font-size:35px">Rules</h8>
+            <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat.<br><br>Subscribe to receive updates on available dates and special offers.
+            </p>
+
+            <button type="button" style="width: 25%; height: 35px; background-color: green">Subscribe</button>
+        </div>
+        <p style="opacity:0.2">_______________________________________________________________________________________</p>
+
+
+
+
+
+
+
+        <!--Contact-->
+        <div>
+                <h8 style="color:Green; font-size:35px">Contact</h8>
+                <div>
+                        <br>Chicago, US  <!--Add js dynamic property and store data from DB--> <br>
+                        Phone: +00 151515<br>
+                        Email: mail@mail.com<br><br>
+                </div>
+
+                Questions? Go ahead, ask them.
+
+                <div id="form">
+                    <form method="POST">
+                        <label for="name"></label><br><br>
+                        <input type="text" name="name" placeholder="Name" style="width: 90%; height: 35px">
+                        <label for="email"></label><br><br>
+                        <input type="text" name="email" placeholder="Email" style="width: 90%; height: 35px">
+                        <label for="message"></label><br><br>
+                        <input type="text" name="message" placeholder="Message" style="width: 90%; height: 35px"><br><br>
+                        <button type="submit" style="width: 25%; height: 35px; background-color: green">Send Message</button>
+                    </form>
+                </div>
+                <br>
+
+
+        </div>
+
+
+
+<!--whole box -->
+</div>
+</div>
+
+
+</body>
+</html>

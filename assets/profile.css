@@ -1,0 +1,104 @@
+.navbar{
+    background-color: rgb(51, 51, 51);
+    box-shadow: 0px 5px 20px #000000;
+}
+
+.navbar a{
+    color: white;
+}
+
+body{
+    /* background-image: linear-gradient(rgba(0, 153, 255, 0.438),rgba(255, 0, 0, 0.185),rgba(0, 0, 0, 0.349)); */
+}
+
+.profile-div{
+    position: relative;
+    z-index: 1;
+    margin: 0px 80px;
+    display: flex;
+    justify-content: left;
+    border: 2px solid grey;
+    padding: 5px 5px;
+}
+
+.backheading{
+    margin: 0px 0px;
+    z-index: 0;
+    font-size: 80px;
+    opacity: 0.3;
+    font-family: cursive;
+    
+}
+
+.profile-image > img {
+    position: relative;
+    left: 90px;
+    padding: 10px 10px;
+}
+
+.profile-description{
+    position: relative;
+    top:20px;
+    margin-left: -60px;
+    background-color: rgba(77, 77, 77, 0.267);
+    padding: 0px 25px;
+    width: 500px;
+    height: 100%;
+
+}
+
+.innerheading{
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 320;
+}
+
+.profile-skills{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    border: 2px solid grey;
+    flex-basis: 10%;
+}
+
+.small-skill{
+    margin: 0px 0px;
+    font-family: Lucida Sans Unicode;
+    font-size: 12px;
+    opacity: 0.3;
+    
+}
+.big-skill{
+    margin-top: 8px;
+    font-family: Palatino Linotype;
+    font-size: 30px;
+}
+
+
+.skill-flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+li {
+    line-height: 35px;
+    opacity: 0.5;
+}
+
+.vertical-skill{
+    position: relative;
+    left: -250px;
+    top:-30px;
+    transform: rotate(90deg);
+    font-size: 20px;
+    opacity: 0.6;
+    /* letter-spacing: 2px; */
+}
+
+.instagram{
+    position: relative;
+    width: 400px;
+    height: 900px;
+}

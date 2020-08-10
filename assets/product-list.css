@@ -1,0 +1,74 @@
+body{
+  background: url(../public/images/back5.jpg);
+  background-repeat: no-repeat;
+  background-size: 1600px 785px; 
+  background-attachment: fixed;
+  background-position: center; 
+  
+}
+
+.prodcontainer{
+  margin-top: 20px;
+  margin-left: 300px;
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.inside{
+  margin: 0 0px 10px 20px;
+  border:1px solid black;
+  
+}
+
+.pclass{
+  position: absolute;
+  margin-top: 0px;
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+img{
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reinside {
+  border: 1px dashed black;
+  position: relative;
+  top:-5px;
+  background-color: white;
+  cursor: pointer;
+  /* height: 70px; */
+}
+.reinside > p{
+  margin-left: 3px;
+}
+
+.special{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.pagination{
+  margin:50px 0px;
+  text-align: center;
+}
+
+.pagination a{
+  text-decoration: none;
+  color: green;
+  padding: 10px;
+  border: 2px solid green;
+}
+
+.pagination a:hover,
+.pagination a:active,
+.pagination a.active{
+  background-color: black;
+  color: white;
+
+}

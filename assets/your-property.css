@@ -1,0 +1,63 @@
+.prodcontainer{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+img{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imagesbox{
+    position: relative;
+    height:100px;
+    width: 100%;
+}
+
+.inside{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    position: relative;
+    top: 50px;
+    width: 28%;
+    height: 50%;  
+    border: 1px solid rgb(32, 86, 235);
+   
+}
+
+
+.inside:hover{
+    background-image: linear-gradient(to left,blue,pink);
+    padding: 10px 10px;
+    position: relative;
+    
+    top: 50px;
+    width: 28%;
+    height: 50%;  
+    border: 1px solid rgb(32, 86, 235);
+   
+}
+.inside:hover > h1{color: white;}
+
+
+h1{
+    font-size: 35px;
+    color: rgb(143, 143, 143);
+    text-shadow: 2px 2px 5px blue;
+    font-family:  "Courier";
+    transition: 0.5s;
+}
+
+
+.reinside > p{
+    color: rgba(0, 0, 0, 0.753);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
